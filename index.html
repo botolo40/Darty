@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ 
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <title>Darty on site🛍️🛒</title>
+</head>
+<style>
+    body,html{
+      padding:0;
+      margin:0; 
+    }
+    body{
+        background:#1a1a1a;
+        
+    }
+    main{
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    header{
+        width:100%;
+        height:60px; background:linear-gradient(-45deg,#111,#bea0f082);
+  background-size:200% 200%;
+  position:fixed;
+  z-index:1000;
+  box-shadow:0 2px 4px 2px #161616a5;
+  
+    }
+    
+    
+     #menu{
+  margin-top:0;
+      display:none;
+      width:100%;
+      height:450px;
+      color:#d9d9d9cb;
+      background:#070707f2;
+      text-align: start;
+  } 
+  
+ .option{
+
+      cursor:pointer;
+      width:100%;
+      
+  } 
+  
+  
+  
+ 
+    /* div pour la présentation*/
+    #present{
+        width:100%;
+        display:flex;
+        flex-direction:line;
+        background:#1a1a1a;
+        height:350px;
+    }
+    /* 1st div de présentation*/ 
+    .all{
+        height:150px;
+        width:180px;
+        border-radius:12px;
+        border:1px solid white;
+    }
+  
+    /* pour ...*/
+    #accroche{
+        border:1px solid #242424;
+        background-color:#242424ea;
+        width:90%;
+        height:auto;
+        border-radius:12px;
+  }  
+  /* la liste */
+  .mylist{
+      list-style:none;
+      margin-right:15px;
+  }
+.mylist li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #515151;
+    padding: 10px 0;
+    color: skyblue;
+}
+.mylist li:last-child {
+    border-bottom: none;
+}
+/* badge ok*/
+      .ok-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background-color:#00b894;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .ok-badge i {
+            color: white;
+            font-size: 12px;
+        }
+        /* button WhatsApp*/
+        #wa-btn{
+            border:1px solid  #6acb33;
+            border-radius:10px;
+            box-shadow:0 2px 4px 2px #759030;       height:40px;
+            background:#a4cb44;
+            
+        }
+        #wa-btn:active{
+            transform:scale(0.8);
+        }
+        /* flesh de direction */
+        #flesh{
+        margin:0;
+        padding:0;
+            
+            position:relative;
+            left:4px;
+            animation:go 0.5s 1s ease infinite;
+        }
+        @keyframes go{
+            from{left:0;}
+            to{left:4px;}
+         
+        }
+        footer{
+            border-top:1px solid #5b5b5bcd;  color:#ffffff;
+            width:100%;
+            height:150px;
+            margin:0;
+            background:#0c0c0ce0;
+        }
+        /* class pour les réseaux*/
+        .net{
+            background:#d08b93;
+            border:1px solid #ff95be;
+            width:45px;
+            height:45px;
+            border-radius:500px;
+            text-align:center;
+        }
+        /* btn vers les populaires */
+        #btn-pop:active{
+            transform:scale(0.8);
+        }
+        /* multi color*/
+        #multi{
+            width:85%;
+            height:2px;
+            border-radius:5px;
+            background:#5c40ff;
+            animation:multiColor 1.8s 3s ease infinite;
+        }
+        @keyframes multiColor{
+            0%{background:#5c40ff;}
+            50%{background:#ff0034;}
+            100%{background:#ff40e7;}
+        }
+</style>
+<body>
+ <header>
+     
+ <div style="display:flex;flex-direction:line;">   
+  <!--  -->   
+     
+     
+     <div style="margin-top:7px;cursor:pointer;" id="bars">
+  <span style="font-size:35px;color:#ffffff;font-weight:bold;margin-left:15px;"><b>&#8942</b></span></div>  
+<div style="margin-top:23px;margin-left:15px;">Darty on site</div>
+
+<div style="margin-left:140px;">
+   
+<img src="https://i.ibb.co/7Jgqq8pV/IMG-20260421-224518.webp" alt="" style="width:40px;height:40px; border-radius:300px;margin-top:10px; ;"></div>
+
+<!--  -->
+</div>
+<br>
+
+
+
+
+
+<nav id="menu">
+    <br>
+    <br>
+    <p class="option" onclick="window.location.href='about.html'">À propos de <b>Darty on site</b></p>
+    <br>
+    <p class="option" onclick="window.location.href='https://wa.me/243835850437'">WhatsApp</p>
+    <br>
+    <p class="option" onclick="shareSite();">partager le site <i class="fas fa-share-alt"></i></p>
+    <br><br>
+</nav>
+
+ </header> 
+ <br><br><br><br>
+ <main>
+ <!-- populaires -->    
+   <a href="collection.html" style="color:green; margin-right:160px;">les plus populaires <b> > </b></a>  
+    
+     <h1 style="color:#eaeaea; font-size:24px;"><i>Vous aimez acheter des <b style="color:skyblue;"><br>vêtements,accessoires,</b>...?<br><b><u>Darty on site</u></b> est là pour <br>vous!</i></h1>
+     <!-- div pour la présentation -->
+     <div id="present">
+         <br>
+     <!-- 1st de présentation -->  
+     <div class="all" style="position:relative;top:21px; background-image:url('https://i.ibb.co/Vpj4vcR6/IMG-20260428-WA0081.jpg'); background-size:cover;box-shadow:0 2px 4px 2px #161616a5;"></div>  
+     
+     <!-- 2nd  -->
+     <div class="all" style="position:absolute;left:137px; background-image:url('https://i.ibb.co/7HK24hw/IMG-20260428-WA0055.jpg'); background-size:cover;box-shadow:0 2px 4px 2px #161616a5;"></div>
+     
+    <!-- 3rd --> 
+     <div class="all" style="position:relative;top:130px; background-image:url('https://i.ibb.co/xtb1kvhF/IMG-20260428-WA0069.jpg'); background-size:cover;right:40px;box-shadow:0 2px 4px 2px #161616a5;"></div>
+     
+   
+     </div>
+     
+     <!-- multi color -->
+     <div id="multi"></div>
+     
+<br><br>
+<!-- pour les listes,...-->
+
+<div id="accroche">
+    <ul class="mylist">
+        <i>
+            <li>
+    <span class="ok-badge"><i class="fas fa-check"></i></span>
+    <span>
+        vêtements de qualité </span>
+        </li>
+     
+            
+            <li>
+    <span class="ok-badge"><i class="fas fa-check"></i></span>
+    <span>
+         livrés le plus tôt possible </span>
+        </li>
+        
+            <li>
+    <span class="ok-badge"><i class="fas fa-check"></i></span>
+    <span>
+          confiance assurée  </span>
+        </li>
+        
+        </i>
+    </ul>
+    <br>
+    
+   <!-- button WhatsApp --> 
+    <button id="wa-btn" onclick="window.location.href='https://wa.me/243835850437'"><b>suivez-nous sur WhatsApp <b id="flesh">→</b></b></button>
+    
+    <br><br>
+</div>     
+<br><br><br>
+<h2 style="color:#8bd1c8;border-left:4px solid #ffffff;padding-left:4px;border-radius:8px;font-size:22px;"><i>Chaussures,sacs,vêtements<br>,accessoires,...tout <br>se trouve chez Darty!</i></h2>
+<br><br>
+
+
+<!-- pour la présentation des populaires-->
+<div style="width:100%; height:200px; background-image:url('https://i.ibb.co/Gvq6TKqr/IMG-20260428-WA0010.jpg'); background-size:cover;">
+    <br><br>
+    
+    <!-- btn vers les populaires -->
+<button style="margin-left:120px;margin-top:120px;border:2px solid #ff1554; background:#ff1554;border-radius:8px;height:30px;box-shadow:0 2px 4px 2px #1f1f1fed;" id="btn-pop" onclick="window.location.href='collection.html'">voir les plus populaires</button>    
+</div>
+
+
+
+     
+<br><br><br><br>    
+ </main> 
+ 
+ 
+ 
+ 
+ 
+ <footer>
+ <br>
+ Suivez Darty on site :<br><br>
+ <div>
+      
+   
+   <i class="fab fa-whatsapp" style="margin-left:20px;font-size:22px;cursor:pointer;" onclick="window.location.href='https://wa.me/243835850437'"></i>
+   <i class="fab fa-tiktok" style="margin-left:20px;font-size:22px;cursor:pointer;" onclick="'https://vm.tiktok.com/ZS9Lj3D7X7sbM-iDQBL/'"></i>
+   
+ 
+     
+   <i class="fas fa-share-alt" style="font-size:23px;margin-left:190px; cursor:pointer;" onclick="shareSite();"></i>
+   
+    </div>
+    
+ 
+ 
+ <p style="font-size:15px;">All rights reserved © 2026.</p>
+
+ </footer> 
+</body>
+<script>
+    //pour le partage du site 
+function shareSite(){
+if (navigator.share){
+    navigator.share({
+        title:document.title,
+        text:"Découvrez des vêtements, accessoires les plus populaires 🛍️ 🛒",
+        url:window.location.href
+   } );
+}
+else{
+    alert("Le partage n'est pas supporté sur ce navigateur !");
+}
+}  
+
+
+
+
+
+// pour afficher le menu
+        let bar=document.getElementById("bars");
+        let nav=document.getElementById("menu");
+      bar.addEventListener('click',()=>{
+nav.style.display=
+nav.style.display=== "block"?"none":"block";
+})
+
+
+
+</script>
+</html>
